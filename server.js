@@ -4,8 +4,7 @@ const app = express();
 
 const MongoClient = require('mongodb').MongoClient;
 let db;
-// MongoClient.connect('mongodb+srv://harrison:GJWCYtobkLyIcFXc@cluster0.cuyjg.mongodb.net/webstore?retryWrites=true&w=majority
-MongoClient.connect('mongodb+srv://harrison:GJWCYtobkLyIcFXc@cluster0.cuyjg.mongodb.net/', (err, client) => {
+MongoClient.connect('mongodb+srv://Emanuel:Fresh105@cluster0.qs3gw.mongodb.net/', (err, client) => {
     db = client.db('webstore');
 })
  
@@ -83,7 +82,7 @@ app.delete('/collection/:collectionName/:id', (req, res, next) => {
 })
 
 
-const port = process.env.PORT || 7000
+const port = process.env.PORT || 5000
 app.listen(port, () =>{
-    console.log ('server running on port' & 7000)
+    console.log ('server running on port' & 5000)
 });
